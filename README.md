@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# 🛍️ Full-Stack Integration Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Profile & Order Management System
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://jwt.io/)
+[![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
-In the project directory, you can run:
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [API Integration](#api-integration)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a **Full-Stack Integration Project** that demonstrates a complete **User Profile & Order Management** flow. The application transitions from a static frontend to a dynamic, state-driven platform with JWT authentication, protected routes, and optimistic UI updates.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+### 🔐 Authentication & Security
+- ✅ JWT (JSON Web Token) authentication
+- ✅ Secure token storage in localStorage
+- ✅ Auto-logout on token expiry
+- ✅ Protected routes with AuthGuard
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📡 API Integration
+- ✅ Real data from DummyJSON API
+- ✅ Products, Profile, Orders fetching
+- ✅ Axios interceptors for token management
+- ✅ Comprehensive error handling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ⚡ Optimistic UI
+- ✅ Instant cart updates before server response
+- ✅ Automatic rollback on failure
+- ✅ Visual feedback for optimistic items
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🎨 User Interface
+- ✅ Modern glass-morphism design
+- ✅ Smooth animations with Framer Motion
+- ✅ Toast notifications
+- ✅ Fully responsive
+- ✅ Loading states
 
-### `npm run eject`
+### 📱 Pages
+- Login Page
+- Dashboard (Products + Cart)
+- Profile Page
+- Orders Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Technology | Purpose |
+|------------|---------|
+| **React 18** | Frontend framework |
+| **React Router v6** | Routing & navigation |
+| **Context API** | State management |
+| **Axios** | API calls & interceptors |
+| **JWT** | Authentication |
+| **Framer Motion** | Animations |
+| **React Hot Toast** | Notifications |
+| **Custom CSS** | Styling |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Setup
 
-### Code Splitting
+```bash
+# Clone the repository
+git clone https://github.com/your-username/full-stack-integration-weekend-project.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Navigate to project
+cd full-stack-integration-project
 
-### Analyzing the Bundle Size
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Create .env file
+echo "REACT_APP_API_BASE_URL=https://dummyjson.com" > .env
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start development server
+npm start
